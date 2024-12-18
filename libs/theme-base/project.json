@@ -1,0 +1,19 @@
+{
+  "name": "theme-base",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "theme-base/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/theme-base",
+        "main": "theme-base/src/index.ts",
+        "tsConfig": "theme-base/tsconfig.lib.json",
+        "assets": ["theme-base/*.md"]
+      }
+    }
+  }
+}

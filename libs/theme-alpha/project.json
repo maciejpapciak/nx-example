@@ -1,0 +1,19 @@
+{
+  "name": "theme-alpha",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "theme-alpha/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/theme-alpha",
+        "main": "theme-alpha/src/index.ts",
+        "tsConfig": "theme-alpha/tsconfig.lib.json",
+        "assets": ["theme-alpha/*.md"]
+      }
+    }
+  }
+}

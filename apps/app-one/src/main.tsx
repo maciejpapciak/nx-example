@@ -1,6 +1,8 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import App from './app/app';
+import { ThemeProvider } from '@monorepo-example/ui';
+import { themeAlpha } from '@monorepo-example/theme-alpha';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -8,6 +10,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <StrictMode>
-    <App />
+    <ThemeProvider theme={themeAlpha}>
+      <App />
+    </ThemeProvider>
   </StrictMode>
 );

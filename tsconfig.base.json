@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepo-example/theme-alpha": ["libs/theme-alpha/src/index.ts"],
+      "@monorepo-example/theme-base": ["libs/theme-base/src/index.ts"],
+      "@monorepo-example/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
